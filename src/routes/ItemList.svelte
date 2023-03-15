@@ -30,8 +30,8 @@
 				class="slider"
 				type="range"
 				bind:value={$items[i].weight}
-				min="2"
-				max="18"
+				min="1"
+				max="20"
 				step="0.1"
 			/>
 			<button class="button" on:click={() => deleteItem(i)} />
