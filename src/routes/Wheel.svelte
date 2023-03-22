@@ -251,9 +251,9 @@
         fill="#4F91AB"
         stroke="#264653"
         stroke-width="16"
-        on:click={() => (v = 100 + v * 0.5)}
+        on:click={() => (v = Math.random() * 60 + 80 + v * 0.5)}
         on:keydown={(event) => {
-            if (event.key == "Enter") v = 100 + v * 0.5;
+            if (event.key == "Enter") v = Math.random() * 60 + 80 + v * 0.5;
             else if (event.key.toLowerCase() == "d")
                 v += event.shiftKey ? 0.02 : 0.1;
             else if (event.key.toLowerCase() == "a")
